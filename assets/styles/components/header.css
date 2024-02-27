@@ -1,0 +1,129 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 1px solid silver;
+  background-color: #fff;
+}
+
+header .header-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px;
+}
+
+header .header-top a {
+  color: #000000;
+  text-decoration: none;
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  margin-right: 100px;
+}
+
+header .header-top a:hover {
+  color: var(--bg-primary-blue);
+}
+
+header .nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 230px;
+  height: 70px;
+}
+
+header .nav .nav__list {
+  display: flex;
+  list-style: none;
+  gap: 60px;
+  align-items: center;
+}
+
+header .nav .nav__list .nav__list--item:nth-child(3) {
+  display: flex;
+  gap: 40px;
+}
+
+header .nav .nav__list .nav__list--item:nth-child(1) button {
+  background-image: var(--bg-gradient-dark);
+  border: none;
+  padding: 11px 18px;
+  border-radius: 11px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+header .nav .nav__list .nav__list--item:nth-child(1) i {
+  font-size: 28px;
+  margin-top: -4px;
+}
+
+header .nav .nav__list .nav__list--item:nth-child(1) button:hover {
+  background-image: var(--bg-gradient-white);
+  color: #000000;
+}
+
+header .nav .nav__list .nav__list--item .search__wrapper {
+  width: 396px;
+  height: 46px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid var(--bg-silver);
+}
+
+header .nav .nav__list .nav__list--item .search__wrapper input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  padding-left: 18px;
+}
+
+header .nav .nav__list .nav__list--item .search__wrapper button {
+  padding: 14px 21px;
+  display: grid;
+  place-content: center;
+  outline: none;
+  border: none;
+  background-color: var(--bg-primary-blue);
+  color: #fff;
+  font-size: 24px;
+}
+
+header .nav .nav__list .nav__list--item .search__wrapper button:hover {
+  background-color: #0000ffbd;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+header .nav .nav__list .nav__list--item:nth-child(3) button {
+  background: transparent;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+header .nav .nav__list .nav__list--item:nth-child(3) button:nth-child(3) {
+  background-color: var(--bg-silver);
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  transition: all 0.2s linear;
+  transform: translateY(-4px);
+}
+
+header .nav .nav__list .nav__list--item:nth-child(3) button:nth-child(3):hover {
+  background-color: var(--bg-primary-blue);
+  color: #fff;
+  cursor: pointer;
+}

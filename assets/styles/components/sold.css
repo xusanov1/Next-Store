@@ -1,0 +1,62 @@
+#sold {
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+}
+
+#sold .wrapper_cards {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+#sold .wrapper_cards .card {
+    border-radius: 12px;
+    width: 200px;
+    padding: 20px 15px;
+    padding-left: 18px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#sold .wrapper_cards .card .shop a {
+    text-decoration: none;
+}
+
+#sold .wrapper_cards .card .shop {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+
+}
+
+#sold .wrapper_cards .card .shop button {
+    padding: 5px 10px;
+    border-radius: 8px; 
+    border: none;
+    background-color: var(--bg-primary-blue);
+    color: #fff;
+}
+
+#sold .wrapper_cards .card .shop button:hover{
+    background-color: rgba(14, 14, 234, 0.548);
+    cursor: pointer;
+}
+
+#sold .wrapper_cards .card .shop i {
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+#sold .about button{
+    width: 1215px;
+    padding: 7px 50px;
+    background-color: #fff;
+    border: none;
+}

@@ -1,80 +1,662 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nextstore.uz Internet do'koni!</title>
-    <!-- ------ Favicons ------- -->
-    <link rel="icon" href="./public/Logo.svg" />
-    <!-- -----  Main.css ---------- -->
-    <link rel="stylesheet" href="./main.css" />
-  </head>
-  <body>
-    <!-- ============================= HEADER START ========================== -->
-    <header>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nextstore.uz Internet do'koni!</title>
+  <!-- ------ Favicons ------- -->
+  <link rel="icon" href="./public/Logo.svg" />
+  <!-- -----  Main.css ---------- -->
+  <link rel="stylesheet" href="./main.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+  <!-- ============================= HEADER START ========================== -->
+  <header>
+
+    <div class="container">
+      <div class="header-top">
+        <span></span>
+        <a href="#">
+          <i class="bx bxs-envelope"></i>
+          <span>Aloqa uchun</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="container">
+      <nav class="nav">
+
+        <a href="#" class="nav__logo">
+          <img src="./public/Logo.svg" alt="Nextstore.uz Internet do'koni" />
+        </a>
+
+        <ul class="nav__list">
+
+          <li class="nav__list--item">
+            <button>
+              <i class="bx bx-menu"></i>
+              <span>KATALOG</span>
+            </button>
+          </li>
+
+          <li class="nav__list--item">
+            <div class="search__wrapper">
+              <input type="text" placeholder="Maxsulotlarni izlash" />
+              <button>
+                <i class="bx bx-search"></i>
+              </button>
+            </div>
+          </li>
+
+          <li class="nav__list--item">
+
+            <button>
+              <a href="#"><i class="bx bx-heart"></i></a>
+            </button>
+            <button>
+              <a href="#"><i class="bx bx-cart"></i></a>
+            </button>
+            <button>
+              <i class="bx bx-user"></i>
+            </button>
+
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- ============================= HEADER END ========================== -->
+
+  <main>
+    <section id="intro">
       <div class="container">
-        <div class="header-top">
-          <span></span>
-          <a href="#">
-            <i class="bx bxs-envelope"></i>
-            <span>Aloqa uchun</span>
-          </a>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./assets/images/intr-banner.jpg" alt="Intro intr-banner"></div>
+            <div class="swiper-slide"><img src="./assets/images/intr-banner.jpg" alt="Intro intr-banner"></div>
+            <div class="swiper-slide"><img src="./assets/images/intr-banner.jpg" alt="Intro intr-banner"></div>
+            <div class="swiper-slide"><img src="./assets/images/intr-banner.jpg" alt="Intro intr-banner"></div>
+            <div class="swiper-slide"><img src="./assets/images/intr-banner.jpg" alt="Intro intr-banner"></div>
+            <div class="swiper-slide"><img src="./assets/images/intr-banner.jpg" alt="Intro intr-banner"></div>
+            <div class="swiper-slide"><img src="./assets/images/intr-banner.jpg" alt="Intro intr-banner"></div>
+
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
-      </div>
 
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+          });
+        </script>
+      </div>
+    </section>
+<!-- ==================================== category start================================ -->
+    <section id="category">
       <div class="container">
-        <nav class="nav">
-
-          <a href="#" class="nav__logo">
-            <img src="./public/Logo.svg" alt="Nextstore.uz Internet do'koni" />
-          </a>
-
-          <ul class="nav__list">
-
-            <li class="nav__list--item">
-              <button>
-                <i class="bx bx-menu"></i>
-                <span>KATALOG</span>
-              </button>
-            </li>
-
-            <li class="nav__list--item">
-              <div class="search__wrapper">
-                <input type="text" placeholder="Maxsulotlarni izlash" />
-                <button>
-                  <i class="bx bx-search"></i>
-                </button>
+        <div class="wrapper">
+          <div class="category-title">
+            <h2>Kategoriyalar</h2>
+            <div class="wrapper_cards">
+              <div class="card">
+                <div class="content">
+                  <img src="./assets/images/ipgone.jpg" alt="card images">
+                  <div class="text">
+                    <h4>Smartfonlar</h4>
+                  </div>
+                </div>
               </div>
-            </li>
-
-            <li class="nav__list--item">
-
-              <button>
-                <a href="#"><i class="bx bx-heart"></i></a>
-              </button>
-              <button>
-                <a href="#"><i class="bx bx-cart"></i></a>
-              </button>
-              <button>
-                <i class="bx bx-user"></i>
-              </button>
-
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <!-- ============================= HEADER END ========================== -->
-
-    <main>
-      <section id="intro">
-        <div class="container">
-          <div class="carousel">
-            
+              <div class="card">
+                <div class="content">
+                  <img src="./assets/images/macbook.png" alt="card images">
+                  <div class="text">
+                    <h4>Kompyuterlar va <br> notebooklar</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="content">
+                  <img src="./assets/images/artel.png" alt="card images">
+                  <div class="text">
+                    <h4>Sovutkichlar</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="content">
+                  <img src="./assets/images/tv.png" alt="card images">
+                  <div class="text">
+                    <h4>Televizorlar</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="content">
+                  <img src="./assets/images/watch.png" alt="card images">
+                  <div class="text">
+                    <h4>Aqlli soatlar</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="content">
+                  <img src="./assets/images/airpods.png" alt="card images">
+                  <div class="text">
+                    <h4>Quloqchinlar</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="content">
+                  <img src="./assets/images/kondisaner.png" alt="card images">
+                  <div class="text">
+                    <h4>Konditsioner</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="content">
+                  <img src="./assets/images/cleaner.png" alt="card images">
+                  <div class="text">
+                    <h4>Kir yuvish mashinalari</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="about">
+              <a href="#"><button>Batafsil</button></a>
+            </div>
           </div>
         </div>
-      </section>
-    </main>
-  </body>
+    </section>
+<!-- ================================== category end ===================================== -->
+<!-- ================================= sold start ======================================= -->
+    <section id="sold">
+      <div class="container">
+        <div class="wrapper">
+          <div class="wrapper_title">
+            <h2>Eng ko'p sotilgan</h2>
+          </div>
+          <div class="wrapper_cards">
+            <div class="card">
+              <div class="content">
+                <img src="./assets/images/macbook.png" alt=" card image">
+              </div>
+              <div class="text">
+                <h5>299 000 so’m</h5> <br>
+                <p>Apple Airpods Pro <br>
+                  simsiz quloqchin , Oq rangda </p> <br> <br>
+                <h6>1230 ta buyurtma</h6> <br>
+              </div>
+              <div class="shop">
+                <a href="#">
+                  <button>
+                    <span>Sotib olish</span>
+                  </button>
+                    <i class="bx bx-cart"></i>
+                </a>
+                <i></i>
+              </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                <img src="./assets/images/macbook.png" alt=" card image">
+              </div>
+              <div class="text">
+                <h5>299 000 so’m</h5> <br>
+                <p>Apple Airpods Pro <br>
+                  simsiz quloqchin , Oq rangda </p> <br> <br>
+                <h6>1230 ta buyurtma</h6> <br>
+              </div>
+              <div class="shop">
+                <a href="#">
+                  <button>
+                    <span>Sotib olish</span>
+                  </button>
+                    <i class="bx bx-cart"></i>
+                </a>
+                <i></i>
+              </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                <img src="./assets/images/macbook.png" alt=" card image">
+              </div>
+              <div class="text">
+                <h5>299 000 so’m</h5> <br>
+                <p>Apple Airpods Pro <br>
+                  simsiz quloqchin , Oq rangda </p> <br> <br>
+                <h6>1230 ta buyurtma</h6> <br>
+              </div>
+              <div class="shop">
+                <a href="#">
+                  <button>
+                    <span>Sotib olish</span>
+                  </button>
+                    <i class="bx bx-cart"></i>
+                </a>
+                <i></i>
+              </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                <img src="./assets/images/macbook.png" alt=" card image">
+              </div>
+              <div class="text">
+                <h5>299 000 so’m</h5> <br>
+                <p>Apple Airpods Pro <br>
+                  simsiz quloqchin , Oq rangda </p> <br> <br>
+                <h6>1230 ta buyurtma</h6> <br>
+              </div>
+              <div class="shop">
+                <a href="#">
+                  <button>
+                    <span>Sotib olish</span>
+                  </button>
+                    <i class="bx bx-cart"></i>
+                </a>
+                <i></i>
+              </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                <img src="./assets/images/macbook.png" alt=" card image">
+              </div>
+              <div class="text">
+                <h5>299 000 so’m</h5> <br>
+                <p>Apple Airpods Pro <br>
+                  simsiz quloqchin , Oq rangda </p> <br> <br>
+                <h6>1230 ta buyurtma</h6> <br>
+              </div>
+              <div class="shop">
+                <a href="#">
+                  <button>
+                    <span>Sotib olish</span>
+                  </button>
+                    <i class="bx bx-cart"></i>
+                </a>
+                <i></i>
+              </div>
+            </div>
+          </div>
+
+            <div class="wrapper_cards">
+              <div class="card">
+                <div class="content">
+                  <img src="./assets/images/macbook.png" alt=" card image">
+                </div>
+                <div class="text">
+                  <h5>299 000 so’m</h5> <br>
+                  <p>Apple Airpods Pro <br>
+                    simsiz quloqchin , Oq rangda </p> <br> <br>
+                  <h6>1230 ta buyurtma</h6> <br>
+                </div>
+                <div class="shop">
+                  <a href="#">
+                    <button>
+                      <span>Sotib olish</span>
+                    </button>
+                      <i class="bx bx-cart"></i>
+                  </a>
+                  <i></i>
+                </div>
+              </div>
+              <div class="card">
+                <div class="content">
+                  <img src="./assets/images/macbook.png" alt=" card image">
+                </div>
+                <div class="text">
+                  <h5>299 000 so’m</h5> <br>
+                  <p>Apple Airpods Pro <br>
+                    simsiz quloqchin , Oq rangda </p> <br> <br>
+                  <h6>1230 ta buyurtma</h6> <br>
+                </div>
+                <div class="shop">
+                  <a href="#">
+                    <button>
+                      <span>Sotib olish</span>
+                    </button>
+                      <i class="bx bx-cart"></i>
+                  </a>
+                  <i></i>
+                </div>
+              </div>
+              <div class="card">
+                <div class="content">
+                  <img src="./assets/images/macbook.png" alt=" card image">
+                </div>
+                <div class="text">
+                  <h5>299 000 so’m</h5> <br>
+                  <p>Apple Airpods Pro <br>
+                    simsiz quloqchin , Oq rangda </p> <br> <br>
+                  <h6>1230 ta buyurtma</h6> <br>
+                </div>
+                <div class="shop">
+                  <a href="#">
+                    <button>
+                      <span>Sotib olish</span>
+                    </button>
+                      <i class="bx bx-cart"></i>
+                  </a>
+                  <i></i>
+                </div>
+              </div>
+              <div class="card">
+                <div class="content">
+                  <img src="./assets/images/macbook.png" alt=" card image">
+                </div>
+                <div class="text">
+                  <h5>299 000 so’m</h5> <br>
+                  <p>Apple Airpods Pro <br>
+                    simsiz quloqchin , Oq rangda </p> <br> <br>
+                  <h6>1230 ta buyurtma</h6> <br>
+                </div>
+                <div class="shop">
+                  <a href="#">
+                    <button>
+                      <span>Sotib olish</span>
+                    </button>
+                      <i class="bx bx-cart"></i>
+                  </a>
+                  <i></i>
+                </div>
+              </div>
+              <div class="card">
+                <div class="content">
+                  <img src="./assets/images/macbook.png" alt=" card image">
+                </div>
+                <div class="text">
+                  <h5>299 000 so’m</h5> <br>
+                  <p>Apple Airpods Pro <br>
+                    simsiz quloqchin , Oq rangda </p> <br> <br>
+                  <h6>1230 ta buyurtma</h6> <br>
+                </div>
+                <div class="shop">
+                  <a href="#">
+                    <button>
+                      <span>Sotib olish</span>
+                    </button>
+                      <i class="bx bx-cart"></i>
+                  </a>
+                  <i></i>
+                </div>
+              </div>
+              <div class="about">
+                <a href="#"><button>Ko'proq ko'rish</button></a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- ============================== sold end =========================== -->
+
+<!-- ========================= swiper start ============================= -->
+    <section id="intro">
+      <div class="container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./assets/images/dom image.jpg" alt="Intro intr-banner"></div>
+            <div class="swiper-slide"><img src="./assets/images/dom image.jpg" alt="Intro intr-banner"></div>
+            <div class="swiper-slide"><img src="./assets/images/dom image.jpg" alt="Intro intr-banner"></div>
+            <div class="swiper-slide"><img src="./assets/images/dom image.jpg" alt="Intro intr-banner"></div>
+            <div class="swiper-slide"><img src="./assets/images/dom image.jpg" alt="Intro intr-banner"></div>
+            <div class="swiper-slide"><img src="./assets/images/dom image.jpg" alt="Intro intr-banner"></div>
+            <div class="swiper-slide"><img src="./assets/images/dom image.jpg" alt="Intro intr-banner"></div>
+            <div class="swiper-slide"><img src="./assets/images/dom image.jpg" alt="Intro intr-banner"></div>
+            <div class="swiper-slide"><img src="./assets/images/dom image.jpg" alt="Intro intr-banner"></div> 
+
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+          });
+        </script>
+      </div>
+    </section>
+<!-- ==================================== swiper end ============================================ -->
+
+<section id="sold">
+  <div class="container">
+    <div class="wrapper">
+      <div class="wrapper_title">
+        <h2>Eng ommabop</h2>
+      </div>
+      <div class="wrapper_cards">
+        <div class="card">
+          <div class="content">
+            <img src="./assets/images/macbook.png" alt=" card image">
+          </div>
+          <div class="text">
+            <h5>299 000 so’m</h5> <br>
+            <p>Apple Airpods Pro <br>
+              simsiz quloqchin , Oq rangda </p> <br> <br>
+            <h6>1230 ta buyurtma</h6> <br>
+          </div>
+          <div class="shop">
+            <a href="#">
+              <button>
+                <span>Sotib olish</span>
+              </button>
+                <i class="bx bx-cart"></i>
+            </a>
+            <i></i>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <img src="./assets/images/macbook.png" alt=" card image">
+          </div>
+          <div class="text">
+            <h5>299 000 so’m</h5> <br>
+            <p>Apple Airpods Pro <br>
+              simsiz quloqchin , Oq rangda </p> <br> <br>
+            <h6>1230 ta buyurtma</h6> <br>
+          </div>
+          <div class="shop">
+            <a href="#">
+              <button>
+                <span>Sotib olish</span>
+              </button>
+                <i class="bx bx-cart"></i>
+            </a>
+            <i></i>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <img src="./assets/images/macbook.png" alt=" card image">
+          </div>
+          <div class="text">
+            <h5>299 000 so’m</h5> <br>
+            <p>Apple Airpods Pro <br>
+              simsiz quloqchin , Oq rangda </p> <br> <br>
+            <h6>1230 ta buyurtma</h6> <br>
+          </div>
+          <div class="shop">
+            <a href="#">
+              <button>
+                <span>Sotib olish</span>
+              </button>
+                <i class="bx bx-cart"></i>
+            </a>
+            <i></i>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <img src="./assets/images/macbook.png" alt=" card image">
+          </div>
+          <div class="text">
+            <h5>299 000 so’m</h5> <br>
+            <p>Apple Airpods Pro <br>
+              simsiz quloqchin , Oq rangda </p> <br> <br>
+            <h6>1230 ta buyurtma</h6> <br>
+          </div>
+          <div class="shop">
+            <a href="#">
+              <button>
+                <span>Sotib olish</span>
+              </button>
+                <i class="bx bx-cart"></i>
+            </a>
+            <i></i>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <img src="./assets/images/macbook.png" alt=" card image">
+          </div>
+          <div class="text">
+            <h5>299 000 so’m</h5> <br>
+            <p>Apple Airpods Pro <br>
+              simsiz quloqchin , Oq rangda </p> <br> <br>
+            <h6>1230 ta buyurtma</h6> <br>
+          </div>
+          <div class="shop">
+            <a href="#">
+              <button>
+                <span>Sotib olish</span>
+              </button>
+                <i class="bx bx-cart"></i>
+            </a>
+            <i></i>
+          </div>
+        </div>
+      </div>
+
+        <div class="wrapper_cards">
+          <div class="card">
+            <div class="content">
+              <img src="./assets/images/macbook.png" alt=" card image">
+            </div>
+            <div class="text">
+              <h5>299 000 so’m</h5> <br>
+              <p>Apple Airpods Pro <br>
+                simsiz quloqchin , Oq rangda </p> <br> <br>
+              <h6>1230 ta buyurtma</h6> <br>
+            </div>
+            <div class="shop">
+              <a href="#">
+                <button>
+                  <span>Sotib olish</span>
+                </button>
+                  <i class="bx bx-cart"></i>
+              </a>
+              <i></i>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <img src="./assets/images/macbook.png" alt=" card image">
+            </div>
+            <div class="text">
+              <h5>299 000 so’m</h5> <br>
+              <p>Apple Airpods Pro <br>
+                simsiz quloqchin , Oq rangda </p> <br> <br>
+              <h6>1230 ta buyurtma</h6> <br>
+            </div>
+            <div class="shop">
+              <a href="#">
+                <button>
+                  <span>Sotib olish</span>
+                </button>
+                  <i class="bx bx-cart"></i>
+              </a>
+              <i></i>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <img src="./assets/images/macbook.png" alt=" card image">
+            </div>
+            <div class="text">
+              <h5>299 000 so’m</h5> <br>
+              <p>Apple Airpods Pro <br>
+                simsiz quloqchin , Oq rangda </p> <br> <br>
+              <h6>1230 ta buyurtma</h6> <br>
+            </div>
+            <div class="shop">
+              <a href="#">
+                <button>
+                  <span>Sotib olish</span>
+                </button>
+                  <i class="bx bx-cart"></i>
+              </a>
+              <i></i>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <img src="./assets/images/macbook.png" alt=" card image">
+            </div>
+            <div class="text">
+              <h5>299 000 so’m</h5> <br>
+              <p>Apple Airpods Pro <br>
+                simsiz quloqchin , Oq rangda </p> <br> <br>
+              <h6>1230 ta buyurtma</h6> <br>
+            </div>
+            <div class="shop">
+              <a href="#">
+                <button>
+                  <span>Sotib olish</span>
+                </button>
+                  <i class="bx bx-cart"></i>
+              </a>
+              <i></i>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <img src="./assets/images/macbook.png" alt=" card image">
+            </div>
+            <div class="text">
+              <h5>299 000 so’m</h5> <br>
+              <p>Apple Airpods Pro <br>
+                simsiz quloqchin , Oq rangda </p> <br> <br>
+              <h6>1230 ta buyurtma</h6> <br>
+            </div>
+            <div class="shop">
+              <a href="#">
+                <button>
+                  <span>Sotib olish</span>
+                </button>
+                  <i class="bx bx-cart"></i>
+              </a>
+              <i></i>
+            </div>
+          </div>
+          <div class="about">
+            <a href="#"><button>Ko'proq ko'rish</button></a>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ============================== sold end =========================== -->
+  </main>
+</body>
+
 </html>

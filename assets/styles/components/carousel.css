@@ -1,5 +1,4 @@
 #intro .carousel {
-    background-color: limegreen;
     width: 100%;
     border-radius: 30px;
     height: 300px;
@@ -54,4 +53,14 @@
     stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
     stroke-dasharray: 125.6;
     transform: rotate(-90deg);
+}
+
+@media only screen and (max-width: 380px) {
+    #intro .swiper-slide  img{
+        height: 200px;
+        border-radius: 12px;
+        object-fit: fill;
+    }
+   
+
 }

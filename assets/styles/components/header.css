@@ -59,6 +59,7 @@ header .nav .nav__list .nav__list--item:nth-child(1) button {
   gap: 12px;
   cursor: pointer;
 }
+
 header .nav .nav__list .nav__list--item:nth-child(1) i {
   font-size: 28px;
   margin-top: -4px;
@@ -126,4 +127,36 @@ header .nav .nav__list .nav__list--item:nth-child(3) button:nth-child(3):hover {
   background-color: var(--bg-primary-blue);
   color: #fff;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 950px) {
+  .bx bx-menu {
+    width: 100px;
+    margin-left: -50px;
+  }
+
+
+}
+
+/* ============================================================= */
+
+@media only screen and (max-width: 380px) {
+
+  header .header-top a{
+    font-size: 12px;
+    margin-right: 10px;
+    gap: 5px;
+  }
+  .nav__logo img{
+    width: 150px;
+  }
+
+  #katalog {
+    display: none;
+  }
+
+  .search__wrapper{
+    display: none;
+  }
+
 }

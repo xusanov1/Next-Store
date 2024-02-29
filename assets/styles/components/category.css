@@ -9,11 +9,9 @@
 
 #category .wrapper_cards{
     display: flex;
-    /* flex-wrap: wrap; */
     justify-content: space-between;
-    margin-top: 50px;
-    gap: 10px;
-}
+    column-gap: 10px;
+  }
 
 #category .wrapper_cards .card{
     border-radius: 12px;
@@ -32,4 +30,15 @@
     border: none;
     background-color: #fff;
     font-size: 20px;    
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 380px){
+    .category-title{
+        display: none;
+    }
+
+    .about a button{
+        width: 50px;
+    }
 }

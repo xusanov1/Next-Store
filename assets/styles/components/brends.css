@@ -1,0 +1,17 @@
+#brends{
+    padding: 20px;
+    width: 100%;
+}
+
+#brends .wrapper_cards {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+    gap: 15px;
+}
+
+#brends .wrapper_cards .card {
+    background-color: #fff;
+    text-align: center;
+}
+

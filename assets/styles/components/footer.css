@@ -1,0 +1,51 @@
+#make {
+    margin-top: 20px;
+    padding-top: 20px;
+    width: 100%;
+    background: var(--bg-gradient-white);
+    
+}
+
+#make .wrapper {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid silver;
+}
+
+#make nav .list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 712px;
+    margin-top: 90px;
+    margin-left: 30px;
+    line-height: 30px;
+}
+
+#make nav .list a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+}
+
+#make nav .list a:hover {
+    color: var(--bg-primary-blue);
+}
+
+#make .right {
+    padding-top: 100px;
+    padding-left: 200px;
+}
+
+#make .right a{
+    text-decoration: none;
+}
+
+#make .right a:hover{
+    color: var(--bg-primary-blue);
+}
+
+#make .social img {
+    margin-left: 930px;
+    margin-top: 80px;
+}

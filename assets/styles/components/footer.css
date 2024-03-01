@@ -16,7 +16,7 @@
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-    width: 712px;
+    width: 100%;
     margin-top: 90px;
     margin-left: 30px;
     line-height: 30px;
@@ -46,6 +46,6 @@
 }
 
 #make .social img {
-    margin-left: 930px;
+    margin-right: -50px;
     margin-top: 80px;
 }

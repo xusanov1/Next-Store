@@ -7,8 +7,8 @@
 #sold .wrapper_cards {
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
     flex-wrap: wrap;
     gap: 20px;
     margin-top: 50px;
@@ -16,7 +16,7 @@
 
 #sold .wrapper_cards .card {
     border-radius: 12px;
-    width: 200px;
+    width: 100%;
     padding: 20px 15px;
     padding-left: 18px;
     background-color: #fff;
@@ -24,7 +24,12 @@
     position: relative;
 }
 
-#sold .wrapper_cards .card .text h5{
+#sold .about button {
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+#sold .wrapper_cards .card .text h5 {
     color: var(--bg-primary-blue);
 }
 
@@ -44,7 +49,7 @@
 #sold .wrapper_cards .card .shop button {
     width: 110px;
     height: 40px;
-    border-radius: 8px; 
+    border-radius: 8px;
     font-size: 14px;
     font-weight: 539;
     border: none;
@@ -52,7 +57,7 @@
     color: #fff;
 }
 
-#sold .wrapper_cards .card .shop button:hover{
+#sold .wrapper_cards .card .shop button:hover {
     background-color: rgba(14, 14, 234, 0.548);
     cursor: pointer;
 }
@@ -63,15 +68,15 @@
     font-size: 25px;
 }
 
-#sold .about button{
-    width: 1215px;
+#sold .about button {
+    width: 100%;
     padding: 7px 50px;
     background-color: #fff;
     border: none;
     font-weight: 500;
 }
 
-#sold .wrapper_cards .card .like button{
+#sold .wrapper_cards .card .like button {
     width: 50px;
     height: 50px;
     background-color: transparent;
@@ -81,4 +86,18 @@
     top: 0;
     right: 0;
 
+}
+
+@media only screen and (max-width: 768px) {
+    #sold .wrapper_cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10px, 5fr));
+        flex-wrap: wrap;
+        gap: 1px;
+    }
+
+
+    #sold .wrapper_cards .card {
+       width: 100%;
+    }
 }

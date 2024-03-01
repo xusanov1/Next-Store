@@ -1,43 +1,45 @@
-#category .card-wrapper {
+#computers .card-wrapper {
     background: transparent;
     padding-top: 50px;
 }
 
-#category .card-wrapper h2 {
+#computers .card-wrapper p {
     margin-bottom: 20px;
 }
 
-#category .card-wrapper .card-container {
+#computers .card-wrapper .card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
-    column-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    column-gap: 20px;
+    row-gap: 20px;
 }
 
-#category .card {
+#computers .card {
     background-color: #fff;
-    width: 135px;
-    height: 200px;
+    width: 195px;
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+    padding: 30px;
+    margin-top: 20px;
 }
 
-#category .card:hover {
+#computers .card:hover {
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 
-#category .card img {
+#computers .card img {
     width: 135px;
     margin-top: 8px;
 }
 
-#category .card .card-body {
+#computers .card .card-body {
     padding: 0 10px;
+    text-align: center;
 }
 
-#category .card .card-body a,
-p {
+#computers .card .card-body a {
     text-align: center;
     font-size: 14px;
     color: #000000;
@@ -46,44 +48,38 @@ p {
     display: block;
 }
 
-#category .about button{
-    width: 100%;
-    border-radius: 8px;
-    border: none;
-    margin-top: 20px;
-    font-weight: 500;
-    background-color: #fff;
-    padding: 10px;
-    overflow-x: hidden;
+#computers .card .card-body h6 {
+    color: gray;
 }
 
+
 @media only screen and (max-width: 768px) {
-    #category .card {
+    #computers .card {
         width: 160px;
     }
 
-    #category .card-wrapper .card-container {
+    #computers .card-wrapper .card-container {
         row-gap: 10px;
 
     }
 
-    #category .about  {
-        width: 100%;
+    #computers .about {
+        width: 768px;
         padding: 0;
     }
 }
 
 @media only screen and (max-width: 480px) {
-    #category .card {
+    #computers .card {
         width: 150px;
     }
 
-    #category .card img {
+    #computers .card img {
         width: 150px;
         margin-top: 18px;
     }
 
-    #category .card-wrapper .card-container {
+    #computers .card-wrapper .card-container {
         gap: 20px;
         justify-items: center;
     }

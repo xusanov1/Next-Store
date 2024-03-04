@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nextstore.uz Internet do'koni!</title>
+  <link rel="stylesheet" href="./assets/js/index.js" />
   <!-- ------ Favicons ------- -->
   <link rel="icon" href="./public/Logo.svg" />
   <!-- -----  Main.css ---------- -->
@@ -16,12 +17,44 @@
 <body>
   <!-- ============================= HEADER START ========================== -->
 
+  <div id="loader" class="loader">
+
+    <div class="load-wrapper">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+
+    </div>
+
+  </div>
+  <div class="container relative">
+  <div id="singin" class="signin hide-menu">
+      <div class="signin-wrapper">
+          <h3 class="sign-title">Hisobga kirish uchun </h3>
+        <button class="btn-1">Kirish</button>
+        <p>yoki</p>
+        <button class="btn-2">Ro’yxatdan o’tish</button>
+        <div class="iks">
+          <a href="#"><p>X</p></a>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+<div class="hide-login">
+</div>
+
+
+
   <header>
     <div class="container">
       <div class="header-top">
         <span></span>
         <a href="#">
-          <i class="bx bxs-envelope"></i>
+
           <span>Aloqa uchun</span>
         </a>
       </div>
@@ -43,7 +76,8 @@
 
         <ul class="nav__list">
           <li class="nav__list--item">
-            <button>
+            
+            <button id="toggle">
               <i class="bx bx-menu"></i>
               <span>KATALOG</span>
             </button>
@@ -65,7 +99,7 @@
             <button>
               <a href="#"><i class="bx bx-cart"></i></a>
             </button>
-            <button>
+            <button id="userToggle">
               <i class="bx bx-user"></i>
             </button>
           </li>
@@ -73,6 +107,89 @@
       </nav>
     </div>
   </header>
+
+
+  <div class="container relative">
+    <div id="menu-panel" class="menu-panel hide-menu">
+      <ul class="menu-grid">
+        <li class="menu-grid-item">
+          <ul>
+            <li><a href="#">Kompyuterlar va notebooklar</a></li>
+            <li><a href="#">Telefonlar</a></li>
+            <li><a href="#">Maishiy texnika</a></li>
+            <li><a href="#">Erkaklar uchun kiyim</a></li>
+            <li><a href="#">Ayollar uchun kiyimlar</a></li>
+            <li><a href="#">Bolalar uchun </a></li>
+            <li><a href="#">Avtomobil mahsulotlari</a></li>
+            <li><a href="#">Go'zallik va so'glik</a></li>
+            <li><a href="#">Sport va o'yin-kulgi</a></li>
+            <li><a href="#">Uy hayvonlari uchun tovarlar</a></li>
+            <li><a href="#">Xobbi va ijodkorlik</a></li>
+            <li><a href="#">Kantselyariya buyumlari</a></li>
+            <li><a href="#">Maishiy kimyo</a></li>
+            <li><a href="#">Sport va o'yin-kulgi</a></li>
+            <li><a href="#">Uy hayvonlari uchun tovarlar</a></li>
+          </ul>
+        </li>
+
+        <li class="menu-grid-item">
+          <ul>
+            <li><a href="#">Brendlar</a></li>
+            <li><a href="#">Samsung</a></li>
+            <li><a href="#">Vivo</a></li>
+            <li><a href="#">Tecno</a></li>
+            <li><a href="#">Realme</a></li>
+            <li><a href="#">Xiaomi</a></li>
+            <li><a href="#">Apple</a></li>
+            <li><a href="#">Artel</a></li>
+            <li><a href="#">Nokia</a></li>
+          </ul>
+        </li>
+
+        <li class="menu-grid-item">
+          <ul>
+            <li><a href="#">Samsung brendi</a></li>
+            <li><a href="#">S serialar </a></li>
+            <li><a href="#">A serialar </a></li>
+            <li><a href="#">Note serilar</a></li>
+            <li><a href="#">M serialar</a></li> <br> <br>
+            <li><a href="#"> Redmi & Xiaomi</a></li>
+            <li><a href="#">S serialar </a></li>
+            <li><a href="#">A serialar </a></li>
+            <li><a href="#">Note serilar</a></li>
+            <li><a href="#">M serialar</a></li>
+          </ul>
+        </li>
+
+        <li class="menu-grid-item">
+          <ul>
+            <li><a href="#">Apple brendi</a></li>
+            <li><a href="#">S serialar </a></li>
+            <li><a href="#">A serialar </a></li>
+            <li><a href="#">Note serilar </a></li>
+            <li><a href="#">M serialar</a></li>
+          </ul>
+        </li>
+
+        <li class="menu-grid-item">
+          <ul>
+            <li><a href="#">Huawei</a></li>
+            <li><a href="#">S serialar </a></li>
+            <li><a href="#">A serialar </a></li>
+            <li><a href="#">Note serilar</a></li>
+            <li><a href="#">M serialar</a></li> <br> <br>
+            <li><a href="#">Eng ommabop </a></li>
+            <li><a href="#">S serialar </a></li>
+            <li><a href="#">A serialar </a></li>
+            <li><a href="#">Note serilar</a></li>
+            <li><a href="#">M serialar</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
   <!-- ============================= HEADER END ========================== -->
 
   <main>
@@ -85,30 +202,15 @@
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide">
-                <img
-                  src="./assets/images/intr-banner.jpg"
-                  alt="intro banner"
-                />
-                <img
-                  src="./assets/images/intr-banner.jpg"
-                  alt="intro banner"
-                />
-                <img
-                  src="./assets/images/intr-banner.jpg"
-                  alt="intro banner"
-                />
+                <img src="./assets/images/intr-banner.jpg" alt="intro banner" />
+                <img src="./assets/images/intr-banner.jpg" alt="intro banner" />
+                <img src="./assets/images/intr-banner.jpg" alt="intro banner" />
               </div>
               <div class="swiper-slide">
-                <img
-                  src="https://picsum.photos/id/211/1250/400"
-                  alt="intro banner"
-                />
+                <img src="https://picsum.photos/id/211/1250/400" alt="intro banner" />
               </div>
               <div class="swiper-slide">
-                <img
-                  src="https://picsum.photos/id/342/1250/400"
-                  alt="intro banner"
-                />
+                <img src="https://picsum.photos/id/342/1250/400" alt="intro banner" />
               </div>
             </div>
           </div>
@@ -128,108 +230,92 @@
 
             <div class="card">
               <a href="./pages/category/index.html">
-              <img
-                src="./assets/images/ipgone.jpg"
-                alt="Nextstore.uz Iphone 14 Pro max"
-              />
+                <img src="./assets/images/ipgone.jpg" alt="Nextstore.uz Iphone 14 Pro max" />
 
-              <div class="card-body">
-                <p>Smartfonlar</p> </a>
-              </div>
+                <div class="card-body">
+                  <p>Smartfonlar</p>
+              </a>
             </div>
+          </div>
 
-            <div class="card">
-              <a href="./pages/category/index.html">
-              <img
-                src="./assets/images/macbook.png"
-                alt="Nextstore.uz macbook Pro max"
-              />
+          <div class="card">
+            <a href="./pages/category/index.html">
+              <img src="./assets/images/macbook.png" alt="Nextstore.uz macbook Pro max" />
 
               <div class="card-body">
                 <a href="#">Kompyuterlar va
-                  notebooklar</a> </a>
-              </div>
-            </div>
-
-            <div class="card">
-              <a href="./pages/category/index.html">
-              <img
-                src="./assets/images/airpods.png"
-                alt="Nextstore.uz Iphone 14 Pro max"
-              />
-
-              <div class="card-body">
-                <p>Quloqchinlar</p> </a>
-              </div>
-            </div>
-
-            <div class="card">
-              <a href="./pages/category/index.html">
-              <img
-                src="./assets/images/artel.png"
-                alt="Nextstore.uz Iphone 14 Pro max"
-              />
-
-              <div class="card-body">
-                <p>Sovutkichlar</p> </a>
-              </div>
-            </div>
-
-            <div class="card">
-              <a href="./pages/category/index.html">
-              <img
-                src="./assets/images/kondisaner.png"
-                alt="Nextstore.uz Iphone 14 Pro max"
-              />
-
-              <div class="card-body">
-                <p>Konditsioner</p> </a>
-              </div>
-            </div>
-
-            <div class="card">
-              <a href="./pages/category/index.html">
-              <img
-                src="./assets/images/cleaner.png"
-                alt="Nextstore.uz Iphone 14 Pro max"
-              />
-
-              <div class="card-body">
-                <p>Kir yuvish 
-                  mashinalari</p> </a>
-              </div>
-            </div>
-
-            <div class="card">
-              <a href="./pages/category/index.html">
-              <img
-                src="./assets/images/kondisaner.png"
-                alt="Nextstore.uz Iphone 14 Pro max"
-              />
-
-              <div class="card-body">
-                <p>Konditsioner</p> </a>
-              </div>
-            </div>
-
-            <div class="card">
-              <a href="./pages/category/index.html">
-              <img
-                src="./assets/images/watch.png"
-                alt="Nextstore.uz Iphone 14 Pro max"
-              />
-
-              <div class="card-body">
-                <p>Aqlli soatlar</p> </a>
-              </div>
-            </div>
-
-
+                  notebooklar</a>
+            </a>
           </div>
         </div>
-        <div class="about">
-          <button>Batafsil</button>
+
+        <div class="card">
+          <a href="./pages/category/index.html">
+            <img src="./assets/images/airpods.png" alt="Nextstore.uz Iphone 14 Pro max" />
+
+            <div class="card-body">
+              <p>Quloqchinlar</p>
+          </a>
         </div>
+      </div>
+
+      <div class="card">
+        <a href="./pages/category/index.html">
+          <img src="./assets/images/artel.png" alt="Nextstore.uz Iphone 14 Pro max" />
+
+          <div class="card-body">
+            <p>Sovutkichlar</p>
+        </a>
+      </div>
+      </div>
+
+      <div class="card">
+        <a href="./pages/category/index.html">
+          <img src="./assets/images/kondisaner.png" alt="Nextstore.uz Iphone 14 Pro max" />
+
+          <div class="card-body">
+            <p>Konditsioner</p>
+        </a>
+      </div>
+      </div>
+
+      <div class="card">
+        <a href="./pages/category/index.html">
+          <img src="./assets/images/cleaner.png" alt="Nextstore.uz Iphone 14 Pro max" />
+
+          <div class="card-body">
+            <p>Kir yuvish
+              mashinalari</p>
+        </a>
+      </div>
+      </div>
+
+      <div class="card">
+        <a href="./pages/category/index.html">
+          <img src="./assets/images/kondisaner.png" alt="Nextstore.uz Iphone 14 Pro max" />
+
+          <div class="card-body">
+            <p>Konditsioner</p>
+        </a>
+      </div>
+      </div>
+
+      <div class="card">
+        <a href="./pages/category/index.html">
+          <img src="./assets/images/watch.png" alt="Nextstore.uz Iphone 14 Pro max" />
+
+          <div class="card-body">
+            <p>Aqlli soatlar</p>
+        </a>
+      </div>
+      </div>
+
+
+      </div>
+      </div>
+      <div class="about">
+        <button>Batafsil</button>
+      </div>
       </div>
     </section>
     <!-- ================================== category end ===================================== -->
@@ -485,9 +571,9 @@
               </div>
             </div>
           </div>
-            <div class="about">
-              <a href="#"><button>Ko'proq ko'rish</button></a>
-            </div>
+          <div class="about">
+            <a href="#"><button>Ko'proq ko'rish</button></a>
+          </div>
         </div>
       </div>
     </section>
@@ -1037,13 +1123,13 @@
 
             <a href="#">
               <h4>Sag’bon 186, Olmazor tumani, Toshkent, O'zbekiston</h4> <br>
-            </a> <br> 
+            </a> <br>
           </div>
         </div>
-          <div class="social">
-            <a href=""><img src="./assets/images/social (2).svg" alt="social medias"></a>
-            <h3>Bizning ijtimoiy tarmoqlar
-            </h3>
+        <div class="social">
+          <a href=""><img src="./assets/images/social (2).svg" alt="social medias"></a>
+          <h3>Bizning ijtimoiy tarmoqlar
+          </h3>
         </div>
       </div>
     </section>
@@ -1052,10 +1138,13 @@
 
     <section id="fin">
       <div class="container">
-        
+
       </div>
     </section>
   </footer>
 </body>
+<!-- <script src="./assets/js/swiper.js"></script>
+<script src="./assets/js/installSwiper.js"></script> -->
+<script src="./assets/js/index.js"></script>
 
 </html>

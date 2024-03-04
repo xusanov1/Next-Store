@@ -1,9 +1,11 @@
 @import "./header.css";
-@import "./card.css";
 @import "./carousel.css";
 @import "./footer.css";
 @import "./category.css";
 @import "./sold.css";
 @import "./brends.css";
 @import "./slider.css";
-@import "./category_computers.css"
+@import "./category_computers.css";
+@import "./menu-panel.css";
+@import "./loader.css";
+@import "./singin.css";

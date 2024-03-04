@@ -1,0 +1,55 @@
+.menu-panel{
+    position: absolute;
+    background-color: #fff;
+    display: block;
+    width: 80%;
+    overflow: hidden;
+    border-radius: 8px;
+    height: 818px;
+    z-index: 99;
+    box-shadow: 0px 10px 10px silver;
+    margin-top: 3px;
+    top: 110px;
+    transition: transform 0.1s linear;
+}
+
+.menu-grid{
+    display: grid;
+    grid-template-columns: repeat(5, minmax(200px , 1fr));
+    list-style-type: none;
+}
+.menu-grid .menu-grid-item{
+    padding: 10px 0 10px 10px;
+}
+
+.menu-grid .menu-grid-item ul{
+    list-style-type: none;
+}
+
+.menu-grid .menu-grid-item ul li{
+    padding: 14px 14px;
+    border-radius: 8px 0 0 8px;
+    transition: all 0.2s ease;
+}
+.menu-grid .menu-grid-item ul li:hover{
+    background-color: #fff;
+}
+
+.menu-grid .menu-grid-item ul li:hover a{
+    color:#00008b;
+}
+
+.menu-grid .menu-grid-item ul li a{
+    text-decoration: none;
+    font-weight: 100;
+    color:#000000;
+}
+
+.menu-grid .menu-grid-item:first-child{
+    background-image: var(--bg-gradient-white);
+    height: 818px;
+}
+
+.hide-menu{
+   transform: translateY(-120%);
+}

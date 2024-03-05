@@ -27,23 +27,10 @@ window.addEventListener("load",function(){
    
 })
 
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
 
-// var userToogleButton = document.getElementById("userToogle");
-// var iconMenu = document.getElementById("icon-menu");
-// var singIn = document.getElementById("singin");
-
-
-
-
-// // ----- toggle menu -----
-
-// toogleButton.addEventListener('click', function () {
-
-//     menuPanel.classList.toggle('hide-menu');
-//     if (!menuPanel.classList.contains('hide-menu')) {
-//         iconMenu.innerHTML = `<i class="bx bx-x"></i>`
-//     } else {
-//         iconMenu.innerHTML = `<i class="bx bx-menu"></i>`
-//     }
-// });
-
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}

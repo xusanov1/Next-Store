@@ -1,0 +1,273 @@
+#laptops {
+    width: 100%;   
+    padding-top: 50px;
+}
+
+#laptops .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+#laptops .wrapper_left{
+    padding: 20px;
+    margin-top: 50px;
+    margin-left: -650px;
+    background-color: #fff;
+    line-height: 30px;
+}
+
+#laptops .wrapper_left h5{
+    font-size: 20px;
+}
+
+#laptops .wrapper_left p span{
+    margin-left: 200px;
+}
+
+#laptops .wrapper_left .search .poisk{
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid silver;
+}
+
+#laptops .wrapper_left  .paid button{
+    padding: 10px;
+    border-radius: 12px;
+    border: none !important;
+    color: #000;
+    background: var(--bg-gradient-white);
+}
+
+
+/* ======================================= */
+
+#laptops .wrapper_top{
+    height: 100%;
+    margin-top: 50px;
+    line-height: 30px;
+    margin-left: -200px;
+}
+
+#laptops .wrapper_top button{
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 12px;
+    background-color:var( --bg-primary-blue) ;
+    color: #fff;
+}
+
+/* ======================================== */
+
+#laptops .select{
+    margin-top: 70px;
+    height: 100%;
+}
+
+#laptops .select select{
+    padding: 10px;
+    padding-right: 40px;
+    border-radius: 12px;
+}
+
+/* ========================================= */
+
+#laptops .wrapper_middle{
+    transform: translateY(-1150px);
+    margin-left: 350px;
+}
+
+#laptops .card-wrapper {
+    background: transparent;
+}
+
+#laptops .card-wrapper p {
+    margin-bottom: 20px;
+}
+
+#laptops .card-wrapper .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+#laptops .card {
+    background-color: #fff;
+    width: 195px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+#laptops .card:hover {
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+#laptops .card img {
+    width: 135px;
+    margin-top: 8px;
+}
+
+#laptops .card .card-body {
+    padding: 0 10px;
+    text-align: center;
+}
+
+#laptops .card .card-body a {
+    text-align: center;
+    font-size: 14px;
+    color: #000000;
+    font-weight: 539;
+    text-decoration: none;
+    display: block;
+}
+
+#laptops .card .card-body h6 {
+    color: gray;
+}
+
+
+@media only screen and (max-width: 768px) {
+    #laptops .card {
+        width: 160px;
+    }
+
+    #laptops .card-wrapper .card-container {
+        row-gap: 10px;
+
+    }
+
+    #laptops .about {
+        width: 768px;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #laptops .card {
+        width: 150px;
+    }
+
+    #laptops .card img {
+        width: 150px;
+        margin-top: 18px;
+    }
+
+    #laptops .card-wrapper .card-container {
+        gap: 20px;
+        justify-items: center;
+    }
+}
+
+/* ============================================= */
+
+#sotilgan {
+    width: 100%;
+    height: 100%;
+    margin-top: -600px;
+}
+
+#sotilgan .wrapper_title h2{
+    margin-top: -100px;
+    margin-bottom: 20px;
+}
+
+#sotilgan .wrapper_cards {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+    flex-wrap: wrap;
+    gap: 20px;
+    /* margin-top: 50px; */
+}
+
+#sotilgan .wrapper_cards .card {
+    border-radius: 12px;
+    width: 100%;
+    padding: 20px 15px;
+    padding-left: 18px;
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+#sotilgan .about button {
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+#sotilgan .wrapper_cards .card .text h5 {
+    color: var(--bg-primary-blue);
+}
+
+#sotilgan .wrapper_cards .card .shop a {
+    text-decoration: none;
+}
+
+#sotilgan .wrapper_cards .card .shop {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    text-align: center;
+}
+
+#sotilgan .wrapper_cards .card .shop button {
+    width: 110px;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 539;
+    border: none;
+    background-color: var(--bg-primary-blue);
+    color: #fff;
+}
+
+#sotilgan .wrapper_cards .card .shop button:hover {
+    background-color: rgba(14, 14, 234, 0.548);
+    cursor: pointer;
+}
+
+#sotilgan .wrapper_cards .card .shop i {
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+#sotilgan .about button {
+    width: 100%;
+    padding: 7px 50px;
+    background-color: #fff;
+    border: none;
+    font-weight: 500;
+}
+
+#sotilgan .wrapper_cards .card .like button {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    font-size: 23px;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+@media only screen and (max-width: 768px) {
+    #sold .wrapper_cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10px, 5fr));
+        flex-wrap: wrap;
+        gap: 1px;
+    }
+
+
+    #sold .wrapper_cards .card {
+       width: 100%;
+    }
+}

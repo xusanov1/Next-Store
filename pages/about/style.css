@@ -1,0 +1,239 @@
+#introo .wrapper{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 150px;
+}
+
+
+#introo .wrapper_left .wrapper_title{ 
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#introo .wrapper_right{
+    padding-top: 40px;
+    line-height: 40px;
+    width: 100%;
+    padding-left: 100px;
+}
+
+#introo .wrapper_right h2{
+    font-size: 30px;
+}
+
+#introo .wrapper_right h5{
+    font-size: 25px;
+    color: var(--bg-primary-blue);
+}
+
+#introo .wrapper_right .credit {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 12px;
+    color: var(--bg-primary-blue);
+}
+
+#introo .wrapper_right .credit:focus{
+    border:2px solid var(--bg-primary-blue);
+    color: var(--bg-primary-blue);
+}
+
+#introo .wrapper_right .store {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--bg-primary-blue);
+    color: #fff;     
+}
+
+
+#introo .wrapper_right .buy {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--bg-primary-blue);
+    color: #fff;     
+    margin-bottom: 50px;
+}
+
+#introo .wrapper_right i a{
+    font-size: 15px;
+}
+
+
+/* ============================================ */
+
+#cheap{
+    margin-top: 50px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+#cheap .wrapper input{
+    margin-bottom: 20px;
+
+}
+
+#cheap .wrapper .card{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid silver;
+    padding: 10px;
+    align-items: center;
+}
+
+#cheap .wrapper .card img{
+    width: 60px;
+    height: 50px;
+}
+
+#cheap .wrapper .card .paid{
+    color:  #0D63F3;
+}
+
+#cheap .wrapper .card .green{
+    color: #2CB708;
+}
+
+#cheap .wrapper .card button{
+    padding: 7px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ECF4FF;
+    color: 
+    #0D63F3;
+}
+
+/* ======================================================== */
+
+#feature{
+    margin-top: 50px;
+    background-color: #fff;
+}
+
+#feature .wrapper{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+#feature .wrapper .properties{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid silver;
+    border-top: 1px solid silver;
+    padding: 10px;
+    align-items: center;
+}
+
+/* ============================================================= */
+
+/* ============================================= */
+
+#sotilgan {
+    width: 100%;
+    height: 100%;
+}
+
+#sotilgan .wrapper_title h2{
+    margin-bottom: 20px;
+}
+
+#sotilgan .wrapper_cards {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+    flex-wrap: wrap;
+    gap: 20px;
+    /* margin-top: 50px; */
+}
+
+#sotilgan .wrapper_cards .card {
+    border-radius: 12px;
+    width: 100%;
+    padding: 20px 15px;
+    padding-left: 18px;
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+#sotilgan .about button {
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+#sotilgan .wrapper_cards .card .text h5 {
+    color: var(--bg-primary-blue);
+}
+
+#sotilgan .wrapper_cards .card .shop a {
+    text-decoration: none;
+}
+
+#sotilgan .wrapper_cards .card .shop {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    text-align: center;
+}
+
+#sotilgan .wrapper_cards .card .shop button {
+    width: 110px;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 539;
+    border: none;
+    background-color: var(--bg-primary-blue);
+    color: #fff;
+}
+
+#sotilgan .wrapper_cards .card .shop button:hover {
+    background-color: rgba(14, 14, 234, 0.548);
+    cursor: pointer;
+}
+
+#sotilgan .wrapper_cards .card .shop i {
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+#sotilgan .about button {
+    width: 100%;
+    padding: 7px 50px;
+    background-color: #fff;
+    border: none;
+    font-weight: 500;
+}
+
+#sotilgan .wrapper_cards .card .like button {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    font-size: 23px;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+@media only screen and (max-width: 768px) {
+    #sold .wrapper_cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10px, 5fr));
+        flex-wrap: wrap;
+        gap: 1px;
+    }
+
+
+    #sold .wrapper_cards .card {
+       width: 100%;
+    }
+}
